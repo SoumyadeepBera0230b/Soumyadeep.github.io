@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id = 'head'>
+        Virtual Calculator
+    </div>
+    <div class="main">
+        <div>
+            <input id="ans" type="text" value="" placeholder="">
+        </div>
+        <br>
+        <div id="onoffdiv">
+            <div class="div1">
+                <button onclick="onofffun(this.innerText)">AC</button>
+
+            </div>
+            <div class = 'div2'>
+                <button id = "onoffbtn" onclick="onofffun(this.innerText)">ON</button>
+                
+            </div>
+        </div>
+        <div>
+            <button onclick="onofffun(String(this.innerText))">7</button>
+            <button onclick="onofffun(this.innerText)">8</button>
+            <button onclick="onofffun(this.innerText)">9</button>
+            <button onclick="onofffun(this.innerText)">+</button>
+
+        </div>
+        <div>
+            <button onclick="onofffun(this.innerText)">4</button>
+            <button onclick="onofffun(this.innerText)">5</button>
+            <button onclick="onofffun(this.innerText)">6</button>
+            <button onclick="onofffun(this.innerText)">-</button>
+
+        </div>
+        <div>
+            <button onclick="onofffun(this.innerText)">1</button>
+            <button onclick="onofffun(this.innerText)">2</button>
+            <button onclick="onofffun(this.innerText)">3</button>
+            <button onclick="onofffun('*')">x</button>
+
+        </div>
+        <div>
+            <button onclick="onofffun(this.innerText)">/</button>
+            <button onclick="onofffun(this.innerText)">0</button>
+            <button id = "C" onclick="onofffun('C')">C</button>
+            <button id = "=" onclick="onofffun(this.innerText)">=</button>
+            <br>
+
+        </div>
+        <br>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
